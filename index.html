@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <meta name=theme-color content="black">
+  <h1><em>Touch The Ball<em></h1>
+  <button></button>
+  <style>
+  html{background-color:black}
+  h1{color:white;
+    position:absolute;
+    top:25vh;
+    left:50vw;
+  }
+  button{background-color:red;
+  border:none;
+  border-radius: 50%;
+  width:10vw;
+  height:10vw;
+  animation: move 5s ease-in-out infinite;
+  }
+  @keyframes move{
+    25%,75%{box-shadow: 0 0 5vw 1vw red;}
+    50%{box-shadow: none;
+      transform: translate(0vh,80vh)
+    }
+  }
+  </style>
+  <script>
+  var count = 0;
+  document.querySelector('button').onclick = function () {
+    count++;
+    if (count==5){
+    document.querySelector('h1').innerHTML="You Won!";}
+    else{
+    document.querySelector('h1').innerHTML = count;}}
+  </script>
+</html>
