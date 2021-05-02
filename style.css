@@ -1,8 +1,9 @@
 html{background-color:black}
   h1{
     position:absolute;
-    top:100vw;
-    animation:glaze 0.5s ease-in-out infinite; }
+    top:120vw;
+    left:50vw;
+    animation:glaze 750ms ease-in-out infinite; }
   @keyframes glaze{
     50%{color:yellow;
       text-shadow: 0 0 2vw yellow
@@ -10,7 +11,8 @@ html{background-color:black}
   }
   p{color:darkseagreen;
   position: absolute;
-    left:80vw;
+  top:90vh;
+  left:40vw;
     font-size: 1rem;
   }
   button{background-color:red;
