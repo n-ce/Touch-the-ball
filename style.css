@@ -1,4 +1,7 @@
-html{background-color:black}
+html{background-color:black;
+border:2vw solid greenyellow;
+  height:100vh;
+}
   h1{
     position:absolute;
     top:120vw;
