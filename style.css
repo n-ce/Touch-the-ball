@@ -26,11 +26,9 @@ button{
   50%{transform: translateY(10vh)}
 }
 @keyframes One{
-  30%{transform: translate(0vw,60vh)}
-  40%{transform: translate(60vw,50vh)}
-  60%{transform: translate(60vw,-60vh)}
-  70%{transform: translate(0vw,-60vh)}
-  100%{transform: translate(0vw,0vh)}
+  0%{transform: translateY(60vh)}
+  50%{transform: translateY(0vh)}
+  100%{transform: translateY(-60vh)}
 }
 @keyframes move{
   0%{transform: translate(10vw,10vw)}
