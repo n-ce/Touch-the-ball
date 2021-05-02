@@ -8,9 +8,10 @@ html{background-color:black}
       text-shadow: 0 0 2vw yellow
     }
   }
-  p{color: darkseagreen;
+  p{color:darkseagreen;
   position: absolute;
     left:80vw;
+    font-size: 1rem;
   }
   button{background-color:red;
   border:none;
