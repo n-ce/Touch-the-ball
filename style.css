@@ -1,38 +1,45 @@
-html{background-color:black;
-border:2vw solid greenyellow;
-  height:100vh;
+html{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color:black;
+  width:98vw;
+  height:98vh;
+  background-repeat: none;
+  background-size: cover;
 }
-  h1{
-    position:absolute;
-    top:120vw;
-    left:50vw;
-    animation:glaze 750ms ease-in-out infinite; }
-  @keyframes glaze{
-    50%{color:yellow;
-      text-shadow: 0 0 2vw yellow
-    }
-  }
-  p{color:darkseagreen;
-  position: absolute;
-  top:80vh;
-  left:40vw;
-    font-size: 1rem;
-  }
-  button{background-color:red;
+h1{animation:glaze 2s ease-in-out infinite;}
+@keyframes glaze{50%{color:yellow;text-shadow: 0 0 2vw yellow}}
+
+h3{color:darkseagreen}
+
+button{
+  background-color:red;
   border:none;
   border-radius: 50%;
   width:10vw;
   height:10vw;
-  animation: move 5s ease-in-out infinite;
-  }
-  @keyframes move{
-    0%{transform: translate(10vw,10vw)}
-    25%{box-shadow: 0 0 5vw 1vw red;
-    transform: translate(10vw,80vw)}
-    50%{box-shadow: none;
-      transform: translate(80vw,80vw)}
-    75%{box-shadow: 0 0 5vw 1vw red;
-      transform: translate(80vw,10vw)
-    }
-    100%{transform: translate(10vw,10vw)}
+  animation: Tutorial 3s ease-out}
+@keyframes Tutorial{
+  from{transform: translateY(-60vh)}
+  50%{transform: translateY(10vh)}
+}
+@keyframes One{
+  30%{transform: translate(0vw,60vh)}
+  40%{transform: translate(60vw,50vh)}
+  60%{transform: translate(60vw,-60vh)}
+  70%{transform: translate(0vw,-60vh)}
+  100%{transform: translate(0vw,0vh)}
+}
+@keyframes move{
+  0%{transform: translate(10vw,10vw)}
+  
+  25%{box-shadow: 0 0 5vw 1vw red;transform: translate(10vw,80vw)}
+  
+  50%{box-shadow: none;transform: translate(80vw,80vw)}
+  
+  75%{box-shadow: 0 0 5vw 1vw red;transform: translate(80vw,10vw)}
+  
+  100%{transform: translate(10vw,10vw)}
   }
