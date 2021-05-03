@@ -11,10 +11,10 @@ html{
   background-size: cover;
   font-family: 'Press Start 2P', cursive;
 }
-h1{animation:glaze 2s ease-in-out infinite;}
+h3{animation:glaze 2s ease-in-out infinite;}
 @keyframes glaze{50%{color:yellow;text-shadow: 0 0 2vw yellow}}
 
-h3{color:darkseagreen}
+h6{color:darkseagreen}
 
 button{
   background-color:red;
