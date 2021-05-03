@@ -1,6 +1,6 @@
 var b=document.querySelector('button');
 var w=document.querySelector('html');
-var h=document.querySelector('h1');
+var h=document.querySelector('h3');
 b.addEventListener('click',()=>{document.querySelector('audio').play();});
 
 var count = -1;
