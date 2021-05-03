@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 html{
   display:flex;
   justify-content: center;
@@ -6,8 +7,9 @@ html{
   background-color:black;
   width:98vw;
   height:98vh;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Press Start 2P', cursive;
 }
 h1{animation:glaze 2s ease-in-out infinite;}
 @keyframes glaze{50%{color:yellow;text-shadow: 0 0 2vw yellow}}
@@ -20,24 +22,29 @@ button{
   border-radius: 50%;
   width:10vw;
   height:10vw;
-  animation: Tutorial 3s ease-out}
+  animation: Tutorial 2s linear;}
+  
 @keyframes Tutorial{
   from{transform: translateY(-60vh)}
-  50%{transform: translateY(10vh)}
+  50%{transform: translateY(10vh);
+    box-shadow: 0 0 5vw 1vw red;
+  }
 }
 @keyframes One{
   0%{transform: translateY(60vh)}
-  50%{transform: translateY(0vh)}
+  50%{transform: translateY(0vh);
+    box-shadow: 0 0 5vw 1vw red;
+  }
   100%{transform: translateY(-60vh)}
 }
-@keyframes move{
-  0%{transform: translate(10vw,10vw)}
+@keyframes Two{
+  0%{transform: translate(-40vw,-40vw)}
   
-  25%{box-shadow: 0 0 5vw 1vw red;transform: translate(10vw,80vw)}
+  25%{box-shadow: 0 0 5vw 1vw black;transform: translate(-40vw,40vw)}
   
-  50%{box-shadow: none;transform: translate(80vw,80vw)}
+  50%{box-shadow: none;transform: translate(40vw,40vw)}
   
-  75%{box-shadow: 0 0 5vw 1vw red;transform: translate(80vw,10vw)}
+  75%{box-shadow: 0 0 5vw 1vw black;transform: translate(40vw,-40vw)}
   
-  100%{transform: translate(10vw,10vw)}
+  100%{transform: translate(-40vw,-40vw)}
   }
