@@ -10,11 +10,7 @@ html{
   background-size: cover;
   font-family: cursive;
 }
-body{
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
+
 h3{
   animation:glaze 2s ease-in-out infinite;
 }
@@ -47,16 +43,14 @@ h6{
   }
 }
 
-.hide-ball {
-  display: none;
-}
-
-.hide-reload {
+.hide-ball,.hide-reload {
   display: none;
 }
 
 .show-reload {
   display: block;
-  text-align: center;
-  margin-left: 1.6rem;
+  outline: none;
+  background:none;
+  color:red;
+  border:none;
 }
